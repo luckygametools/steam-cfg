@@ -1,0 +1,41 @@
+{
+  "version":"4",
+  "notices":["Wellcome To Lucky Game Tools","Just for test"],
+  "ads": [
+    {
+      "position": "gameTop",
+      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header_schinese.jpg?t=1725007201"],
+      "note": "Black Myth: Wukong",
+      "targetType": "openUrl",
+      "targetUrl": "steam://openurl/https://store.steampowered.com/app/2358720/"
+    },
+    {
+      "position": "gameTop",
+      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1720558643"],
+      "note": "Red Dead Redemption 2",
+      "targetType": "openUrl",
+      "targetUrl": "steam://openurl/https://store.steampowered.com/app/1174180/"
+    },
+	{
+      "position": "gameTop",
+      "imgs":      ["https://avatars.akamai.steamstatic.com/6dae999a5c31e565572d469a1cac410608f42c93_full.jpg"],
+      "note": "Telegram(官方唯一群)",
+      "targetType": "openUrl",
+      "targetUrl": "https://t.me/luckygametools"
+    },
+    {
+      "position": "gameTop",
+      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271590/header.jpg?t=1720472998"],
+      "note": "Grand Theft Auto V",
+      "targetType": "openUrl",
+      "targetUrl": "steam://openurl/https://store.steampowered.com/app/271590/"
+    },
+    {
+      "position": "gameTop",
+      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg?t=1726188854"],
+      "note": "Cyberpunk 2077",
+      "targetType": "openUrl",
+      "targetUrl": "steam://openurl/https://store.steampowered.com/app/1091500"
+    }
+  ]
+}
