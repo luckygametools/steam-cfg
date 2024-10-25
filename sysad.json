@@ -1,5 +1,5 @@
 {
-  "version":"4",
+  "version":"5",
   "notices":["Wellcome To Lucky Game Tools","Just for test"],
   "ads": [
     {
@@ -11,12 +11,19 @@
     },
     {
       "position": "gameTop",
-      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1720558643"],
-      "note": "Red Dead Redemption 2",
+      "imgs":      ["https://cdn2.steamgriddb.com/thumb/2715ec81fe7365fee8ea3b17b9403432.jpg"],
+      "note": "购买飞机|电报|telegram账号(AD-就当是捐赠本软件)",
       "targetType": "openUrl",
-      "targetUrl": "steam://openurl/https://store.steampowered.com/app/1174180/"
+      "targetUrl": "https://accboytg.accountboy.com/zh-cn-cny/buy-tg"
     },
-	{
+    {
+      "position": "gameTop",
+      "imgs":      ["https://cdn2.steamgriddb.com/thumb/101342b37476104c212c5c2c0ed9bf62.jpg"],
+      "note": "购买Steam空白账号(小号)(AD-就当是捐赠本软件)",
+      "targetType": "openUrl",
+      "targetUrl": "https://accboytg.accountboy.com/zh-cn-cny/buy-Steam"
+    },
+    {
       "position": "gameTop",
       "imgs":      ["https://avatars.akamai.steamstatic.com/6dae999a5c31e565572d469a1cac410608f42c93_full.jpg"],
       "note": "Telegram(官方唯一群)",
@@ -29,13 +36,6 @@
       "note": "Grand Theft Auto V",
       "targetType": "openUrl",
       "targetUrl": "steam://openurl/https://store.steampowered.com/app/271590/"
-    },
-    {
-      "position": "gameTop",
-      "imgs":      ["https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/header.jpg?t=1726188854"],
-      "note": "Cyberpunk 2077",
-      "targetType": "openUrl",
-      "targetUrl": "steam://openurl/https://store.steampowered.com/app/1091500"
     }
   ]
 }
