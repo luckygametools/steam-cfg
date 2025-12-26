@@ -1,26 +1,40 @@
-# steam-cfg
-Lucky Game Tools 《steamtools auto import》
+# 🛑 严重安全警示：使用本工具前的风险评估报告
 
-Link with me: LuckyGameTools@gmail.com
+**致所有潜在用户：**
+本仓库分发的工具涉及修改 Steam 客户端核心组件。作为开源社区的一员，我有责任从信息安全的角度，对使用此类**闭源二进制工具**的潜在危害进行详细说明。请在点击“下载”或运行之前，仔细阅读以下技术分析。
 
-Installer exe(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller.exe)
+### 1. 核心机制风险：DLL 劫持 (DLL Hijacking)
+该工具的工作原理通常涉及替换 Steam 根目录下的系统动态链接库文件（例如 `hid.dll`, `version.dll` 或 `winhttp.dll`）。
+* **技术原理**：这是黑客技术中典型的“DLL 侧加载”攻击。当 Steam 启动时，它会优先加载目录下的伪造 DLL，而不是 Windows 系统目录下的正版 DLL。
+* **危害**：这意味着该程序拥有与 Steam 进程完全相同的权限。它可以**读取 Steam 内存中的所有数据**，包括但不限于你的明文密码（在特定输入阶段）、会话令牌 (Session Token) 以及未加密的聊天记录。
 
-Installer exe for china(https://raw.githubusercontent.com/luckygametools/steam-cfg/main/LuckyGameToolsInstaller_zh.exe)
+### 2. “黑盒”与不可审计性 (Closed Source Risks)
+尽管本仓库托管在 GitHub，但其核心功能的执行程序（`.exe`）和库文件（`.dll`）是**完全闭源**的。
+* **不透明**：你无法看到代码内部逻辑。仓库中的开源部分可能只是一个简单的网页外壳或下载器，真正的恶意代码往往隐藏在最终下载的二进制文件中。
+* **不可控**：一旦赋予管理员权限运行，该程序可以静默执行任何操作，包括但不限于：后台截屏、键盘记录、上传浏览器 Cookie 等。
 
-Link with me: LuckyGameTools@gmail.com    https://t.me/luckygametools
+### 3. 高危恶意行为的可能性
+在所谓的“免费入库工具”灰色产业链中，以下恶意行为发生的概率极高：
+* **SSFN 文件窃取**：这是绕过 Steam 令牌（Steam Guard）的关键文件。攻击者获取该文件后，配合你的账号密码，可以在异地无感登录并洗劫库存。
+* **挖矿与僵尸网络**：植入静默挖矿程序（Miner），利用你的显卡资源进行加密货币挖掘，导致硬件寿命缩短、电费增加。或将你的电脑作为 DDoS 攻击的肉鸡。
+* **勒索软件埋伏**：部分恶意软件具有潜伏期，可能在运行数周后才加密你的硬盘文件并索要赎金。
 
-<h1>Not Only一键自动入库steam游戏工具(steam unlocked): LuckyGameTools （永久免费）</h1>
+### 4. “杀毒软件误报”的陷阱
+发布者通常会声称杀毒软件的报警是“误报”（False Positive），理由是“因为修改了游戏文件”。
+* **真相**：这是一个极其危险的借口。虽然修改内存确实会触发启发式扫描，但真正的恶意软件正是利用用户的这种心理，将木马特征混淆在“破解补丁”中，诱导用户**主动关闭 Windows Defender** 或添加白名单。一旦你照做，你的最后一道防线就消失了。
 
-##
-- 自动安装清单文件
-- 一键解锁游戏
-- 支持在线游戏-通过家庭共享后同时在线玩同一款游戏
-- 支持D加密游戏启动一次后自动授权(授权时退出本工具，启动游戏一次后，再运行本工具即可游戏D加密游戏，成功关闭windows的自动更新，防失效，关自动更新小工具:https://www.sordum.org/9470/windows-update-blocker-v1-8/)
-- 支持GTA5(及三部曲)和荒野大镖客2一键畅玩
-- 支持steam及社区加速
+### 5. 账号封禁与不可逆后果
+* **Valve 零容忍策略**：虽然 Valve 并不总是立即封禁入库玩家，但通过修改 DLL 注入 Steam 客户端的行为留下了确凿的日志证据。
+* **VAC 与开发者封禁**：如果在开启了反作弊（VAC, EAC, BattlEye）的多人游戏中加载了被篡改的 Steam 客户端，极大概率会触发反作弊系统，导致不可解封的账号封禁。
 
-<h2>游戏资源每天更新中，很多游戏都是满DLC豪华版</h2>
+---
 
-<h1>此软件为纯本地绿色软件，所有资源来自互联网，可能会出现杀毒误报，请大家放心食用</h1>
+### 🛡️ 安全建议
 
-官网：https://luckygametools.github.io
+**为了您的数字资产安全（包括 Steam 账号、支付宝/微信支付凭证、个人隐私文件）：**
+
+1.  **切勿在主力机运行**：绝对不要在存储有重要数据或登录了敏感账号的主力电脑上运行此类工具。
+2.  **隔离环境测试**：如果您必须测试，请务必使用 **虚拟机 (VMware/VirtualBox)** 或 **Windows 沙盒 (Windows Sandbox)**，并确保与宿主机网络隔离。
+3.  **甚至不要尝试**：对于绝大多数普通用户，由此带来的重装系统成本和盗号风险，远超过“免费玩游戏”带来的收益。
+
+**请珍惜您的账号，远离闭源外挂与入库工具。**
