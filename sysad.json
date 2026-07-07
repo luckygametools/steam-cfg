@@ -1,5 +1,5 @@
 {
-  "version":"37",
+  "version":"38",
   "notices":["official FAQ newly added GTA V Enhanced version and GTA IV Crack patch usage instructions <br> (官方FAQ新增 GTA5增強版 和 GTA4 破解補丁使用說明)","If you are over 18 years old, you can enable the display of more hidden games in the 'Settings' in the upper right corner of the software (you can search for keywords in the search box auth1 and auth2  Try it out)<br>如果您年滿18周歲,可以在軟件的右上角“設置”中開啟展示更多的隱藏遊戲(可以在搜索框中搜索關鍵字 auth1和auth2 試試)","Just for test"],
   "ads": [
     {
@@ -12,7 +12,7 @@
     {
       "position": "gameTop",
       "imgs":      ["https://images.steamusercontent.com/ugc/12155938068022956435/D365762A960860577E25C7FE54CE7B598DD454C1/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"],
-      "note": "遊戲輔助【AD】",
+      "note": "單機遊戲修改器【AD】",
       "targetType": "openUrl",
       "targetUrl": "https://www.weplaypower.com?from=lgt"
     },
