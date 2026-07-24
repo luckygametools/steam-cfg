@@ -1,5 +1,5 @@
 {
-  "version":"38",
+  "version":"39",
   "notices":["official FAQ newly added GTA V Enhanced version and GTA IV Crack patch usage instructions <br> (官方FAQ新增 GTA5增強版 和 GTA4 破解補丁使用說明)","If you are over 18 years old, you can enable the display of more hidden games in the 'Settings' in the upper right corner of the software (you can search for keywords in the search box auth1 and auth2  Try it out)<br>如果您年滿18周歲,可以在軟件的右上角“設置”中開啟展示更多的隱藏遊戲(可以在搜索框中搜索關鍵字 auth1和auth2 試試)","Just for test"],
   "ads": [
     {
@@ -18,10 +18,10 @@
     },
     {
       "position": "gameTop",
-      "imgs":      ["https://cdn2.steamgriddb.com/thumb/2715ec81fe7365fee8ea3b17b9403432.jpg"],
-      "note": "Telegram(官方唯一群)",
+      "imgs":      ["https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"],
+      "note": "Steam空帐号购买【AD】",
       "targetType": "openUrl",
-      "targetUrl": "https://t.me/luckygametools"
+      "targetUrl": "https://68n.cn/j3Jfw"
     },
     {
       "position": "gameTop",
